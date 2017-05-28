@@ -5,6 +5,7 @@
 }
 
 .logo__outer-circle {
+    position: relative;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -43,30 +44,89 @@
     -moz-border-radius: 50%;
     width: 170px;
     height: 170px;
-    background: #ffffff;
+    background: #c6d8e2;
     position: absolute;
     top: 5px;
     left: 5px;
 }
 
 .logo__sector-top-left {
-    width: 85px;
-    height: 85px;
-    border-radius: 85px 0 0 0;
-    -webkit-border-radius: 85px 0 0 0;
-    -moz-border-radius: 85px 0 0 0;
+    width: 83px;
+    height: 83px;
+    border-right: 1px solid #c6d8e2;
+    border-radius: 83px 0 0 0;
+    -webkit-border-radius: 83px 0 0 0;
+    -moz-border-radius: 83px 0 0 0;
     background: #539ae6;
+    background: -webkit-linear-gradient(left top, #b0def2 0%, #339bcb 100%);
+    background: -o-linear-gradient(left top, #b0def2 0%, #339bcb 100%);
+    background: -moz-linear-gradient(left top, #b0def2 0%, #339bcb 100%);
+    background: linear-gradient(left top, #b0def2 0%, #339bcb 100%);
+}
+
+.logo__sector-top-right {
+    position: absolute;
+    width: 83px;
+    height: 83px;
+    border-left: 1px solid #c6d8e2;
+    border-radius: 0 83px 0 0;
+    -webkit-border-radius: 0 83px 0 0;
+    -moz-border-radius: 0 83px 0 0;
+    background: #ffffff;
+    bottom: 87px;
+    left: 86px;
+    background: -webkit-linear-gradient(left top, rgba(253, 253, 253, 1) 30%, rgba(174, 174, 174, 1) 110%);
+    background: -o-linear-gradient(left top, rgba(253, 253, 253, 1) 30%, rgba(174, 174, 174, 1) 110%);
+    background: -moz-linear-gradient(left top, rgba(253, 253, 253, 1) 30%, rgba(174, 174, 174, 1) 110%);
+    background: linear-gradient(left top, rgba(253, 253, 253, 1) 30%, rgba(174, 174, 174, 1) 110%);
 }
 
 .logo__sector-bottom-right {
     position: absolute;
-    left: 85px;
-    width: 85px;
-    height: 85px;
-    border-radius: 0 0 85px 0;
-    -webkit-border-radius: 0 0 85px 0;
-    -moz-border-radius: 0 0 85px 0;
+    left: 87px;
+    top: 87px;
+    width: 83px;
+    height: 83px;
+    border-radius: 0 0 83px 0;
+    -webkit-border-radius: 0 0 83px 0;
+    -moz-border-radius: 0 0 83px 0;
     background: #539ae6;
+    background: -webkit-linear-gradient(top left, rgba(51, 155, 203, 0.8) 20%, rgba(45, 98, 123, 1) 80%);
+    background: -o-linear-gradient(top left, rgba(51, 155, 203, 0.8) 20%, rgba(45, 98, 123, 1) 80%);
+    background: -moz-linear-gradient(top left, rgba(51, 155, 203, 0.8) 20%, rgba(45, 98, 123, 1) 80%);
+    background: linear-gradient(top left, rgba(51, 155, 203, 0.8) 20%, rgba(45, 98, 123, 1) 80%);
+}
+
+.logo__sector-bottom-left {
+    position: absolute;
+    width: 83px;
+    height: 83px;
+    top: 87px;
+    border-radius: 0 0 0 83px;
+    -webkit-border-radius: 0 0 0 83px;
+    -moz-border-radius: 0 0 0 83px;
+    background: #ffffff;
+    background: -webkit-linear-gradient(left top, rgba(253, 253, 253, 1) 30%, rgba(174, 174, 174, 1) 110%);
+    background: -o-linear-gradient(left top, rgba(253, 253, 253, 1) 30%, rgba(174, 174, 174, 1) 110%);
+    background: -moz-linear-gradient(left top, rgba(253, 253, 253, 1) 30%, rgba(174, 174, 174, 1) 110%);
+    background: linear-gradient(left top, rgba(253, 253, 253, 1) 30%, rgba(174, 174, 174, 1) 110%);
+}
+
+
+.logo__glare {
+    background: radial-gradient(center, ellipse cover,  rgba(200,200,200,1), rgba(255,255,255,0) 70%);
+    background: -webkit-radial-gradient(center, ellipse cover,  rgba(200,200,200,1), rgba(255,255,255,0) 70%);
+    background: -moz-radial-gradient(center, ellipse cover,  rgba(200,200,200,1), rgba(255,255,255,0) 70%);
+    background: -ms-radial-gradient(center, ellipse cover,  rgba(200,200,200,1), rgba(255,255,255,0) 70%);
+    background: -o-radial-gradient(center, ellipse cover,  rgba(200,200,200,1), rgba(255,255,255,0) 70%);
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    -moz-border-radius: 125px;
+    -webkit-border-radius: 125px;
+    border-radius: 50%;
+    left: -20px;
+    top: -40px;
 }
 
 .letter {
@@ -75,6 +135,7 @@
     font-family: sans-serif;
     position: absolute;
     font-weight: bold;
+    text-shadow: 2px 1px 1px #000000;
 }
 
 .letter.b {
